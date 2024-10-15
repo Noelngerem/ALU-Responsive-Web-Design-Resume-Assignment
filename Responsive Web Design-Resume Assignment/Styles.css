@@ -20,21 +20,19 @@ body {
     left: 0;
     color: white;
     overflow: hidden;
-    border-right: 1px solid red;
+    border-right: 1px solid grey;
 }
 .nav-logo {
     padding: 15px 0 15px 0;
     width: 100%;
-    background-color: red;
+    background-color: rgb(164, 4, 4);
 }
 .nav-contents {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100vh;
 }
 .nav-links {
+    margin-top: 100px;
     width: 100%;
     height: 50vh;
 }
@@ -45,7 +43,7 @@ body {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid grey;
     height: 70px;
     width: 100%;
     transition: all 0.3s ease-in-out;
@@ -58,6 +56,7 @@ body {
 }
 .nav-contents button:hover a {
     font-size: 35px;
+    color: white;
 }
 .nav-contents a {
     text-decoration: none;
@@ -85,13 +84,14 @@ p {
 
 .section-1 {
     position: absolute;
-    width: 800px;
+    width: 900px;
     height: 80vh;
     border: 1px solid red;
     border-radius: 25px;
-    color: white;
     padding: 30px;
+    color: white;
     font-family: sans-serif;
+    transition: all 0.3s ease-in-out;
     background: rgb(18,1,1);
     background: linear-gradient(90deg, rgba(18,1,1,1) 15%, rgba(148,7,7,1) 80%, rgba(225,12,12,0.8213410364145658) 100%);
 }
@@ -106,5 +106,53 @@ p {
     color: red;
 }
 .section-1 span {
-    font-size: 40px;
+    font-size: 45px;
+}
+
+.section-1 #experience {
+    color: grey;
+    font-size: 20px;
+    margin-top: 45px;
+}
+.section-1 .dev-logo {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-1 .html {
+    width: 25%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .html p {
+    margin-left: 25px;
+}
+.section-1 .html img {
+    width: 120px;
+    height: 120px;
+}
+.section-1 .css {
+    width: 25%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .css p {
+    margin-left: 30px;
+}
+.section-1 .css img {
+    width: 120px;
+    height: 120px;
+}
+.section-1 .javascript {
+    width: 25%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .javascript img {
+    width: 120px;
+    height: 120px;
 }
